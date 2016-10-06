@@ -22,7 +22,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     id="org.apache.cordova.camera"
-    version="0.3.4-dev">
+    version="0.3.4">
     <name>Camera</name>
     <description>Cordova Camera Plugin</description>
     <license>Apache 2.0</license>
@@ -50,12 +50,12 @@
             <feature name="Camera">
                 <param name="firefoxos-package" value="Camera" />
             </feature>
-        </config-file>                                         
-        
+        </config-file>
+
         <js-module src="src/firefoxos/CameraProxy.js" name="CameraProxy">
           <runs />
         </js-module>
-    </platform>  
+    </platform>
 
     <!-- android -->
     <platform name="android">
@@ -98,7 +98,7 @@
         </js-module>
 
      </platform>
-     
+
      <!-- ubuntu -->
      <platform name="ubuntu">
          <config-file target="config.xml" parent="/*">
@@ -144,11 +144,11 @@
          <framework src="AssetsLibrary.framework" />
          <framework src="MobileCoreServices.framework" />
          <framework src="CoreGraphics.framework" />
-         
+
          <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
              <string></string>
          </config-file>
-                  
+
      </platform>
 
     <!-- blackberry10 -->
